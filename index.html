@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNet - Mini Rede Social</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1><i class="fa-solid fa-share-nodes"></i> DevNet</h1>
+            <div class="user-profile-mini">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Meu Perfil">
+                <span>Jean</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-container">
+        
+        <!-- Seção de Criação de Post -->
+        <section class="create-post-card">
+            <h2>Criar Publicação</h2>
+            <form id="post-form">
+                <textarea id="post-text" placeholder="No que você está pensando, Jean?" rows="3" required></textarea>
+                <div class="form-group">
+                    <label for="post-image-url"><i class="fa-regular fa-image"></i> URL da Foto (opcional):</label>
+                    <input type="url" id="post-image-url" placeholder="https://exemplo.com/imagem.jpg">
+                </div>
+                <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Publicar</button>
+            </form>
+        </section>
+
+        <!-- Feed de Publicações -->
+        <section id="feed-container" class="feed">
+            <!-- Os posts serão inseridos dinamicamente via JavaScript aqui -->
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
